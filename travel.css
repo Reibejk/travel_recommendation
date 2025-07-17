@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f50;
+  margin: 0;
+}
+
+#links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5%;
+}
+
+#links li {
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+#links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px #fff;
+}
+
+#links li a:hover {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  text-shadow: 0 0 5px #000, 0 0 10px #000;
+  font-size: 1.1em;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+}
+
+#heading h1 {
+  text-shadow: 0 0 3px #000, 0 0 6px #fff, 0 0 9px #000, 0 0 12px #fff;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#logo {
+  margin-right: 10px;
+  width: 70px;
+}
+
+#search-bar {
+  width: 90%;
+  max-width: 500px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin: 18px;
+  background-color: white;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+#search-bar:focus {
+  box-shadow: 0 0 20px #fff;
+}
+
+#icon {
+  padding: 0.8rem;
+  margin: 2px;
+  background-color: white;
+}
+
+input[type="search"] {
+  background: white;
+  flex: 1 1 auto;
+  border: none;
+}
+
+input[type="search"]:focus {
+  border: none;
+  outline: none;
+}
+
+.button {
+  font-weight: bold;
+  border-radius: 15px;
+  margin: 10px;
+  border: 1px solid lightblue;
+  background-color: white;
+  box-shadow: 0 0 10px blue, 0 0 5px blue;
+}
+
+.button:hover {
+  box-shadow: 0 0px 20px blue;
+}
+
+#main {
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  background-color: #0f0f50;
+  overflow: hidden;
+  flex-grow: 3;
+}
+
+#left-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#background-img {
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+}
+
+#head-intro {
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin: 0;
+  font-size: 5vmin;
+  text-shadow: 0 0 2px #000, 0 0 5px #000, 0 0 10px #000;
+}
+
+#intro {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 3vmin;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90%;
+  text-shadow: 0 0 2px #000, 0 0 5px #000, 0 0 10px #000;
+}
+
+#book {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 3vmin;
+  border-radius: 1em;
+  padding: 1em;
+  text-shadow: 0 0 2px #000, 0 0 5px #000, 0 0 10px #000;
+  background-color: rgba(15,15,80,0.8);
+  max-height: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search section */
+
+#searchDisplay {
+  flex: 1;
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 5px darkblue, 0 0 10px darkblue;
+  background-color: white;
+  max-width: 100%;
+  padding: 1em;
+  margin: 1rem;
+}
+
+#searchDisplay:empty {
+  display: none;
+}
+
+#searchDisplay img {
+  width: 100%;
+}
+
+#searchDisplay h2, #searchDisplay p {
+  font-size: 1rem;
+}
+
+hr {
+  z-index: 2;
+  position: relative;
+}
+
+/* About Us */
+
+#team {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  flex: 1;
+  max-height: 500px;
+  width: auto;
+  font-size: 2rem;
+  text-shadow: 0 0 2px #000, 0 0 5px #000, 0 0 10px #000;
+  box-shadow: 0 0 5px darkblue, 0 0 10px darkblue;
+  background-color: rgba(255,255,255,0.4);
+  padding: 1em;
+  border-radius: 10%;
+}
+
+#team div {
+  background-color: rgba(15,15,80,0.4);
+  border-radius: 10%;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  max-width: 20%;
+  max-height: 50%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 5px darkblue, 0 0 10px darkblue;
+}
+
+#team button {
+  max-width: 100%;
+  font-size: 90%;
+  border-radius: 10%;
+  border: none;
+}
+
+
+form {
+  position: relative;
+  flex: 1;
+  background-color: rgba(15,15,80,0.4);
+  border-radius: 10%;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 2em;
+  color: white;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+form input {
+  background-color: rgba(15,15,80,0.4);
+  border-radius: 10%;
+  padding: 1em;
+  color: white;
+  max-width: 90%;
+  margin: 1em;
+}
+
+form textarea {
+  background-color: rgba(15,15,80,0.4);
+  border-radius: 10%;
+  color: white;
+  padding: 2em;
+  max-width: 90%;
+}
+
+form button {
+  background-color: rgba(15,15,80,0.4);
+  border-radius: 10%;
+  padding: 1em;
+  margin-top: 1em;
+  color: white;
+  max-width: 90%;
+  min-width: 90%;
+}

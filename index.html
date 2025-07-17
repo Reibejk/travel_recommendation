@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel agency</title>
+        <link type="text/css" rel="stylesheet" href="./travel.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <nav>
+            <div id="heading">
+                <img id="logo" src="./airplane.png" alt="logo">
+                <h1>Travel Agency</h1>
+            </div>
+            <div>
+                <ul id="links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="search-bar">
+                    <input id="searchText" type="search" placeholder="Enter a destination or keyword">
+                    <img src="./loupe.png" id="icon" alt="loupe" width="30px">
+                    <input type="submit" class="button" id="search" value="Search">
+                    <input type="submit" class="button" id="clear" value="Clear">
+            </div>
+        </nav>
+        <div id="main">
+            <img id="background-img" src="./Best-Beach-Cities.jpg" alt="city">
+            <div id="left-content">
+                <h1 id="head-intro">EXPLORE DREAM DESTINATIONS</h1>
+                <p id="intro">
+                    🌍 Welcome to Your Next Adventure!
+                    Discover breathtaking destinations, hidden gems, and unforgettable experiences. Whether you're dreaming of relaxing on a tropical beach, exploring ancient cities, or hiking through stunning landscapes, we've got the inspiration and tools to help you plan your perfect journey. Start exploring now – your adventure begins here!
+                </p>
+                <button id="book">Book Now</button>
+            </div>
+            <div id="searchDisplay"></div>
+        </div>
+        <script src="./travel.js"></script>
+    </body>
+</html>
