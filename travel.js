@@ -33,7 +33,7 @@ function showRecommendation(event) {
 
             items.slice(0, 2).forEach(item => {
                 const itemDiv = document.createElement('div');
-            item.className = 'item';
+                item.className = 'item';
 
                 const img = document.createElement('img');
                 img.src = item.imageUrl;
@@ -48,7 +48,6 @@ function showRecommendation(event) {
                 itemDiv.appendChild(img);
                 itemDiv.appendChild(h2);
                 itemDiv.appendChild(p);
-                itemDiv.appendChild(hr);
 
                 searchDiv.appendChild(itemDiv);
             });
