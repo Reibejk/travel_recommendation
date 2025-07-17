@@ -10,7 +10,10 @@ function showRecommendation(event) {
     searchDiv.innerHTML = ''; // Clear previous results
 
     fetch('https://reibejk.github.io/travel_recommendation/travel.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); 
+            return response.json()
+        })
         .then(data => {
             let items = [];
 
