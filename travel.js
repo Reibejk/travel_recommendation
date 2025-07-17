@@ -9,7 +9,7 @@ function showRecommendation(event) {
     // const searchDiv = document.createElement('div');
     searchDiv.innerHTML = ''; // Clear previous results
 
-    fetch('./travel.json')
+    fetch('https://reibejk.github.io/travel_recommendation/travel.json')
         .then(response => response.json())
         .then(data => {
             let items = [];
